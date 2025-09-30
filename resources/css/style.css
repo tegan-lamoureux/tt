@@ -36,7 +36,14 @@ body {
   text-align: center;
   padding: 10px;
   min-height: 100vh;
-  cursor: url('../cursors/rainbow.cur'), auto;
+
+  cursor: url('../cursors/rainbow.png') 0 0, auto;
+}
+
+a,
+a:link,
+a:visited {
+  cursor: url('../cursors/link.png') 0 0, pointer;
 }
 
 #music-player {
@@ -121,7 +128,6 @@ body {
   gap: 15px;
   margin-top: 15px;
 }
-
 .friend-card {
   background-color: #111;
   border: 2px solid #ff00ff;
@@ -134,20 +140,25 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
 
+  text-decoration: none;
+  color: inherit;
+}
 .friend-card img {
   width: 60px;
   height: 60px;
   margin-bottom: 8px;
 }
-
 .friend-card a {
   font-size: 10px;
   color: #00ffff;
   text-decoration: none;
 }
-
+.friend-card span {
+  font-size: 10px;
+  color: #00ffff;
+  text-align: center;
+}
 .friend-card:hover {
   transform: scale(1.1);
   border-color: #00ffff;
@@ -269,7 +280,7 @@ marquee {
 
 .button-grid img {
   width: auto;
-  height: 31px;  
+  height: 31px;
 }
 
 
@@ -277,21 +288,30 @@ marquee {
 #skelly {
   animation: skelly-walk 20s linear infinite;
 }
+
 @keyframes skelly-walk {
   0% {
     left: -40px;
   }
+
   50% {
     left: calc(100% - 30px);
     transform: scaleX(1);
   }
+
   51% {
     transform: scaleX(-1);
   }
+
   100% {
     left: -40px;
     transform: scaleX(-1);
   }
+}
+
+/* obfuscate email */
+div.email>span:nth-child(3) {
+  display: none;
 }
 
 
