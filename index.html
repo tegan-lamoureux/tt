@@ -41,11 +41,10 @@
 </head>
 
 <body>
+
   <header id="welcome-banner">
     <h1>
-      <img src="resources/gifs/angel.gif" style="width:50px;">
       Welcome to Teeg's Triangle
-      <img src="resources/gifs/dragon.gif" style="width:50px;">
     </h1>
     <br>
     <p>
@@ -60,33 +59,77 @@
     <br>
   </header>
 
-  <div id="music-player">
+  <div id="music-player" style="position:relative;">
     <p>
-      <img src="resources/gifs/skull.gif" style="width:20px;">
+      <img src="resources/gifs/skull.gif" style="position:absolute; left: 10px; top:0px; width: 30px;">
+
       Now playing: <span style="color:#ff00ff;">Blind, by Korn.</span>
+      <br>
+      <br>
       <audio autoplay loop controls style="height:20px;">
         <source src="resources/media/blind.mp3" type="audio/mpeg">
         Your browser does not support the sweet myspace-style audio element. Sorry your experience is lesser. :(
       </audio>
-      <img src="resources/gifs/skull.gif" style="width:20px;">
+
+      <img src="resources/gifs/dino.gif" style="position:absolute; right: 10px; top:10px; width: 100px;">
     </p>
   </div>
 
-  <main id="nav-section">
-    <h2>
-      <img src="resources/gifs/eye_cry.gif" style="width:30px;">
-      Services
-      <img src="resources/gifs/eye_cry.gif" style="width:30px;">
-    </h2>
-    <div class="nav-links">
-      <a href="http://your-service1.local">Medusozoa</a>
-      <a href="http://your-service2.local">Mastadon Instance</a>
-      <a href="http://your-service3.local">Matrix</a>
-      <a href="http://your-service3.local">Gitlab Instance</a>
-      <a href="http://your-service3.local">VPN Configuration</a>
-      <a href="http://your-service3.local">Browse this site's code.</a>
-    </div>
+  <main>
+    <section id="nav-section">
+      <h2>
+        My Top-Eight
+      </h2>
+      <div class="top-eight">
+        <div class="friend-card">
+          <img src="resources/gifs/tv.gif" alt="avatar">
+          <a href="">Jelly</a>
+        </div>
+        <div class="friend-card">
+          <img src="resources/gifs/dragon.gif" alt="avatar">
+          <a href="">Mastodon</a>
+        </div>
+        <div class="friend-card">
+          <img src="resources/gifs/eye_cry.gif" alt="avatar">
+          <a href="">Chatroom</a>
+        </div>
+        <div class="friend-card">
+          <img src="resources/gifs/toshiba.gif" alt="avatar">
+          <a href="">Gitlab</a>
+        </div>
+        <div class="friend-card">
+          <img src="resources/gifs/angel.gif" alt="avatar">
+          <a href="">VPN Config</a>
+        </div>
+        <div class="friend-card">
+          <img src="resources/gifs/book.gif" alt="avatar">
+          <a href="">Writing</a>
+        </div>
+        <div class="friend-card">
+          <img src="resources/gifs/doot-doot.gif" alt="avatar">
+          <a href=""></a>
+        </div>
+        <div class="friend-card">
+          <img src="resources/gifs/pondering_orb.gif" alt="avatar">
+          <a href="">Who am I?</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Unccomment in case I need a separate link section -->
+    <!-- <section id="nav-section">
+      <h2>
+        Nav-Links / Services
+      </h2>
+      <div class="nav-links">
+        <a href="">One</a>
+        <a href="">Two</a>
+        <a href="">Three</a>
+      </div>
+    </section> -->
+
   </main>
+
 
   <footer id="server-news">
     <h3>
@@ -100,26 +143,32 @@
 
       <div class="news-entry">
         <div class="news-date">📅 2025-09-30</div>
-        <div class="news-body">Example news: <span style="color:#ff00ff;">LET'S GO</span>.</div>
-      </div>
-
-      <div class="news-entry">
-        <div class="news-date">📅 TBD</div>
-        <div class="news-body">We're live baybee.</div>
-      </div>
-
-      <div class="news-entry">
-        <div class="news-date">📅 2025-09-30</div>
-        <div class="news-body">✨ Project started.</div>
+        <div class="news-body">No news yet. <span style="color:#ff00ff;">&lt;3</span>.</div>
       </div>
     </div>
 
     <p class="footnote"><em>I'm glad we're here.</em></p>
-    <p>
-      <img src="resources/gifs/uc2.gif" style="width:195px;">
-    </p>
-  </footer>
 
+    <div class="button-grid">
+      <img src="resources/images/uc.png">
+      <img src="resources/images/love1.png">
+      <img src="resources/images/love3.png">
+      <a href=""> <!-- TODO: add mail page here -->
+        <img src="resources/images/love4.png">
+        <img src="resources/gifs/email.gif">
+        <img src="resources/images/email.png">
+      </a>
+      <img src="resources/images/800x600.gif">
+      <img src="resources/images/aimlink.gif">
+      <img src="resources/images/geocities_area_51.gif">
+      <img src="resources/images/lol.gif">
+      <img src="resources/gifs/bf1.gif">
+      <img src="resources/images/under-con.gif">
+      <img src="resources/images/mystic.png">
+      <img src="resources/gifs/bf3.gif">
+      <img src="resources/images/winrar.jpg">
+    </div>
+  </footer>
 
 </body>
 
