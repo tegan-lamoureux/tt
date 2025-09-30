@@ -26,6 +26,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
+  position: relative;
   background-color: #000000;
   color: #00ffcc;
   font-family: 'Press Start 2P', monospace;
@@ -270,6 +271,29 @@ marquee {
   width: auto;
   height: 31px;  
 }
+
+
+/* walk skelly along bottom */
+#skelly {
+  animation: skelly-walk 20s linear infinite;
+}
+@keyframes skelly-walk {
+  0% {
+    left: -40px;
+  }
+  50% {
+    left: calc(100% - 30px);
+    transform: scaleX(1);
+  }
+  51% {
+    transform: scaleX(-1);
+  }
+  100% {
+    left: -40px;
+    transform: scaleX(-1);
+  }
+}
+
 
 @media (max-width: 600px) {
   body {
